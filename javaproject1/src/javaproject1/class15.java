@@ -8,7 +8,7 @@ public class class15 {
 	public static void main(String[] args) {
 		enter ent = new enter();
 		ent.enter1();
-		Integer[] arrayone = {ent.a, ent.b, ent.c, ent.l};
+		Integer[] arrayone = {ent.a, ent.b, ent.c, ent.d};
 		System.out.println("Массив " + Arrays.toString(arrayone));
 		
 		Arrays.sort(arrayone, 0, 4);
