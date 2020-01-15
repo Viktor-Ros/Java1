@@ -2,12 +2,12 @@ package »нкапсул€ци€;
 
 /*
 *»Ќ јѕ—”Ћя÷»я
-*классы: class22, car
+*классы: Chevrolet, Car
 *дл€ работы с переменными из другого класса, измен€ть сами переменные нельз€
 *в классе car есть приватные переменные color и price, которые нужны другим классам, но в этих измен€ть их нельз€(банковские данные пользователей)
 */
 
-public class Shevrolet {
+public class Chevrolet {
 
 public static void main (String[] args){
 
