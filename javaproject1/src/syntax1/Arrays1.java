@@ -1,12 +1,19 @@
-package javaproject1;
+package syntax1;
+
+/*
+ * 
+ * Разные операции с рукописным массивом
+ * Классы: Array1, Enter
+ * 
+ */
 
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class class15 {
+public class Arrays1 {
 	public static void main(String[] args) {
-		enter ent = new enter();
+		Enter ent = new Enter();
 		ent.enter1();
 		Integer[] arrayone = {ent.a, ent.b, ent.c, ent.d};
 		System.out.println("Массив " + Arrays.toString(arrayone));
@@ -60,10 +67,7 @@ public class class15 {
 	      if (arrayone[i]%2-1==0) {
 	      System.out.println("Нечетный элемент массива " + arrayone[i]);
 	}
-}
-	     // System.out.println("Самый большой четный элементы массива " + );
-
-	      
+}	      
 	      
 	}
 }

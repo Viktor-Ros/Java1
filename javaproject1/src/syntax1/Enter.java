@@ -1,8 +1,13 @@
-package javaproject1;
+package syntax1;
 
+/*
+ * 
+ *Класс, считывает вводимые данные(для массива)
+ *
+ */
 import java.util.Scanner;
 
-public class enter {
+public class Enter {
 	
 	Integer a, b, c, d;
 	
