@@ -1,4 +1,4 @@
-package syntax1;
+package Задачи_массивы_циклы;
 
 /*
  * 
