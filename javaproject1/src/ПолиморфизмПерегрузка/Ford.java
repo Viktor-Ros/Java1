@@ -1,4 +1,4 @@
-package Полиморфизм_Перегрузка;
+package ПолиморфизмПерегрузка;
 
 public class Ford {
 

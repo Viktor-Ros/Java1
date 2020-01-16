@@ -1,6 +1,6 @@
 
 
-package јбстрактные_классы_и_методы;
+package јбстрактные лассыћетоды;
 
 public class Ferm {
 	

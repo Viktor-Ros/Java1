@@ -1,4 +1,4 @@
-package Полиморфизм_Перезапись;
+package ПолиморфизмПерезапись;
 
 public class Ford_plus extends Ford{
 	

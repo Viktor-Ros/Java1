@@ -1,4 +1,4 @@
-package Абстрактные_классы_и_методы;
+package АбстрактныеКлассыМетоды;
 
 public class Сow extends Animalsferm {
 	String cow = "Милка";
