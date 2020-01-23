@@ -28,7 +28,7 @@ public class CollectionSet {
 		Ferm1.add("pig");
 		Ferm1.add("cow");
 		Ferm1.add("27g");
-	
+		
 		System.out.println("HashSet " + Ferm1);
 		
 		TreeSet<String> Ferm2 = new TreeSet<>(); //TreeSet - хранит элементы по порядку, но медленнее чем HashSet

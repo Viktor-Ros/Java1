@@ -43,7 +43,7 @@ public static void main(String[] args) {
         System.out.println("Замена элемента Cow с индексом 0 на Sheep");
         while(itr.hasNext())//Замена элемента по индексу
         {
-        	Ferm.set(0, "Sheep");
+        	Ferm.set(itr.nextIndex(), "Sheep");
         	System.out.println("Индекс - " + itr.nextIndex() + " " + "Элемент - " + itr.next());//Возвращает пред. элемент и его индекс
             
         }

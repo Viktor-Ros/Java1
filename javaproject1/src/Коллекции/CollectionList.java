@@ -28,7 +28,6 @@ public class CollectionList {
 		Ferm1.add(3);
 		Ferm1.add("pig");
 		Ferm1.add("cow");
-		
 		System.out.println(Ferm1);
 		
 		LinkedList Ferm2 = new LinkedList(); //LinkedList - Список элементов, у которых кроме данных есть ссылки на соседние элементы
