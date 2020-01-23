@@ -1,4 +1,4 @@
-package ЗаписьЧтениеУдалениеФайлов;
+package RecordReadingDeletionFiles;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -8,8 +8,8 @@ import java.util.Scanner;
 
 /*
  * 
- * ЧТЕНИЕ ФАЙЛА
- * FileWriter - конструктор для чтения файла,
+ * Р§РўР•РќРР• Р¤РђР™Р›РћР’
+ * * FileWriter - РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РґР»СЏ С‡С‚РµРЅРёСЏ С„Р°Р№Р»Р°
  * 
  */
 

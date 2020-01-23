@@ -1,14 +1,14 @@
 package Nasledovanie;
 
 /*
-*НАСЛЕДОВАНИЕ
-*
-*классы: Parameters, Car, Shevrolet
-*для использование методов и переменных другого класса в своей программе
-*класс shevrolet -  наследник(extends) класса car
-*в классе car нет данных из класса shevrolet
-*цикличного наследования нет(car => chevrolet => nasledovanie =>car - нельзя)
-*
+ *
+ * НАСЛЕДОВАНИЕ
+ * классы: Parameters, Car, Shevrolet
+ * для использование методов и переменных другого класса в своей программе
+ * класс shevrolet -  наследник(extends) класса car
+ * в классе car нет данных из класса shevrolet
+ * цикличного наследования нет(car => chevrolet => nasledovanie =>car - нельзя)
+ *
 */
 
 public class Parameters{

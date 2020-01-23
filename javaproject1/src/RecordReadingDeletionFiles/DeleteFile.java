@@ -1,10 +1,10 @@
-package «апись„тение”даление‘айлов;
+package RecordReadingDeletionFiles;
 
 import java.io.File;
 
 /*
  * 
- * ”ƒјЋ≈Ќ»≈ ‘ј…Ћј
+ * –£–Ф–Р–Ы–Х–Э–Ш–Х –§–Р–Щ–Ы–Ю–Т
  * 
  */
 

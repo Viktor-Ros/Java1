@@ -1,13 +1,14 @@
-package Инкапсуляция;
+package Encapsulation;
 
 public class Car {
 
 private String color = "red";
 private int price = 10000;
-public String getColor() { //Геттер
+public String getColor() { //Р“РµС‚С‚РµСЂ
 return color;
 }
-public int getPrice() { //Геттер
+
+public int getPrice() { //Р“РµС‚С‚РµСЂ
 return price;
 }
 }
