@@ -1,7 +1,7 @@
-package ЗадачиМассивыЦиклы;
+package TasksArraysCycles;
 
 //*
-//* Разные операции с массивами
+//* Р Р°Р·РЅС‹Рµ РѕРїРµСЂР°С†РёРё СЃ РјР°СЃСЃРёРІР°РјРё
 //*
 
 import java.util.Arrays;
@@ -11,7 +11,7 @@ public class Arrays2 {
 
 	public static void main(String[] args) {
 	
-		Integer [] arr = {8,4,15,16,42,54,23};	//создали массив arr из 7 элементов 
+		Integer [] arr = {8,4,15,16,42,54,23};	//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ arr пїЅпїЅ 7 пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 
 		int c = 0;
 		int d = 1;
 		int e = 0;
@@ -20,41 +20,41 @@ public class Arrays2 {
 	 	int u = 0;
 						
 		//*
-		//Вывод массива arr
+		//Р’С‹РІРѕРґ РјР°СЃСЃРёРІР° arr
 		//*
 		
-		System.out.println("Массив " + Arrays.toString(arr));
+		System.out.println("РњР°СЃСЃРёРІ " + Arrays.toString(arr));
 		
 		 //*
-		 //Сумма/произведение элементов массива arr
+		 //РЎСѓРјРјР°/ РїСЂРѕРёР·РІРµРґРµРЅРёРµ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР° arr
 		 //*
 		 
 		 for (int i = 0; i < arr.length; ++i) {		
 				c = c + arr[i];
 				d = d * arr[i];
 			}
-		 System.out.println("Сумма элементов массива " + c);
-		 System.out.println("Произведение элементов массива " + d);
+		 System.out.println("РЎСѓРјРјР° СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР° " + c);
+		 System.out.println("РџСЂРѕРёР·РІРёРґРµРЅРёРµ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР° " + d);
 		
 		 //*
-		 //Длинна массива arr
+		 //Р§РёСЃР»Рѕ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР° arr
 		 //*
 		 
-		System.out.println("Длинна массива " +arr.length);	
+		System.out.println("Р§РёСЃР»Рѕ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР° " +arr.length);	
 		
 		//*
-		 //Четный/нечетный элемент массива arr
+		 //Р§РµС‚РЅС‹Рµ/РЅРµС‡РµС‚РЅС‹Рµ СЌР»РµРјРµРЅС‚С‹ РјР°СЃСЃРёРІР° arr
 		 //*
 		
 		 for (int i = 0; i < arr.length; i++) {
 		      if (arr[i]%2==0) {	  
-		      System.out.println(arr[i] + " Четный элемент массива");}
+		      System.out.println(arr[i] + " Р§РµС‚РЅС‹Р№ СЌР»РµРјРµРЅС‚ РјР°СЃСЃРёРІР°");}
 		      else  
-		    	  System.out.println(arr[i] + " Нечетный элемент массива"); 
+		    	  System.out.println(arr[i] + " РќРµС‡РµС‚РЅС‹Р№ СЌР»РµРјРµРЅС‚ РјР°СЃСЃРёРІР°"); 
 		      }		
 		 
          //*
-		 //Сумма e/кол-во g четных элементов массива arr
+		 //РЎСѓРјРјР°/Р§РёСЃР»Рѕ С‡РµС‚РЅС‹С… СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР° arr
 		 //*
 		 
 		 for (int i = 0; i < arr.length; i++) {
@@ -63,11 +63,11 @@ public class Arrays2 {
 		    	  g = g + 1;
 		      }
 		 }
-		 System.out.println("Сумма четных элементов массива " + e); 
-		 System.out.println("Кол-во четных элементов " + g);
+		 System.out.println("РЎСѓРјРјР° С‡РµС‚РЅС‹С… СЌР»РµРјРµРЅС‚Рѕ РјР°СЃСЃРёРІР° " + e); 
+		 System.out.println("Р§РёСЃР»Рѕ С‡РµС‚РЅС‹С… СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР° " + g);
 		 
 		 //*
-		 //Массив ar из четных элементов массива arr
+		 //РњР°СЃСЃРёРІ ar РёР· С‡РµС‚РЅС‹С… СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР° arr
 		 //*
 		 
 		 Integer [] ar;
@@ -79,10 +79,10 @@ public class Arrays2 {
 	    	  g++; 	 
 	      }
 	 }		 		 
-		 System.out.println("Массив из четных элементов " + Arrays.toString(ar));
+		 System.out.println("РњР°СЃСЃРёРІ РёР· С‡РµС‚РЅС‹С… СЌР»РµРјРµРЅС‚РѕРІ " + Arrays.toString(ar));
 		 
 		//*
-		//Самый большой/маленький элемент масива
+		//РЎР°РјС‹Р№ Р±РѕР»СЊС€РѕР№/РјР°Р»РµРЅСЊРєРёР№ СЌР»РµРјРµРЅС‚ РјР°СЃСЃРёРІР°
 		//*
 		 
 		 for (int i = 0; i < arr.length; i++) {
@@ -91,7 +91,7 @@ public class Arrays2 {
 		    	  u = arr[i];
 		      }
 		 }  
-		 System.out.println("Самый большой элемент массива " + u);
+		 System.out.println("РЎР°РјС‹Р№ Р±РѕР»СЊС€РѕР№ СЌР»РµРјРµРЅС‚ РјР°СЃСЃРёРІР° " + u);
 		 
 		 for (int i = 0; i < arr.length; i++) {
 		      if (h>arr[i]) {
@@ -99,16 +99,16 @@ public class Arrays2 {
 		      }
 		 }  
 		 
-		 System.out.println("Самый маленький элемент массива " + h);	
+		 System.out.println("РЎР°РјС‹Р№ РјР°Р»РµРЅСЊРєРёР№ СЌР»РµРјРµРЅС‚ РјР°СЃСЃРёРІР° " + h);	
 		 
 		 //*
-		 // Массив по возрастанию/убыванию
+		 // РњР°СЃСЃРёРІ РїРѕ СѓР±С‹РІР°РЅРёСЋ/РІРѕР·СЂР°СЃС‚Р°РЅРёСЋ
 		 //*
 		 
 		    Arrays.sort(arr, 0, arr.length);
-			System.out.println("Массив по возрастанию " + Arrays.toString(arr));
+			System.out.println("РњР°СЃСЃРёРІ РїРѕ РІРѕР·СЂР°СЃС‚Р°РЅРёСЋ" + Arrays.toString(arr));
 	
 			Arrays.sort(arr, Collections.reverseOrder());
-			System.out.println("Массив по убыванию " + Arrays.toString(arr));
+			System.out.println("РњР°СЃСЃРёРІ РїРѕ СѓР±С‹РІР°РЅРёСЋ " + Arrays.toString(arr));
 		  }		 
 }

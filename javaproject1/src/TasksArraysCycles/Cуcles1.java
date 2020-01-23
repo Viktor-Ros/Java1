@@ -1,22 +1,22 @@
-package ЗадачиМассивыЦиклы;
+package TasksArraysCycles;
 
 //*
-//* Разные виды циклов
+//* Р’РёРґС‹ С†РёРєР»РѕРІ
 //*
 
-public class Cуcles1 {
+public class CСѓcles1 {
 	
 	public static void main(String[] args) {
-		System.out.print("Цикл FOR по возрастанию - ");
+		System.out.print("Р¦РёРєР» FOR РїРѕ РІРѕР·СЂР°СЃС‚Р°РЅРёСЋ - ");
 		for (int i = 0; i < 11; i = i + 2){
-			//for ([инициализация цикла]; [условие выполнения цикла(макс значение)]; [изменение шага цикла])
+			//for ([РїРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚ С†РёРєР»Р°]; [РґР»РёРЅР° С†РёРєР»Р°]; [С€Р°Рі С†РёРєР»Р°])
 		if (i<9) 
 		    System.out.print(i +" ");
 		else
 			System.out.println(i);	
 		}
 		
-		System.out.print("Цикл FOR по убыванию - ");
+		System.out.print("Р¦РёРєР» FOR РїРѕ СѓР±С‹РІР°РЅРёСЋ - ");
 		for (int i = 10; i >= 0; i = i - 2){
 			
 		if (i > 0)
@@ -25,31 +25,31 @@ public class Cуcles1 {
 			System.out.println(i + " ");
 		}	
 			
-		System.out.print("Цикл WHILE(предусловие) - ");
+		System.out.print("Р¦РёРєР» WHILE(РїСЂРµРґСѓСЃР»РѕРІРёРµ) - ");
 		int w = 1; 
-		while (w <= 11) { // - условие перед циклом
+		while (w <= 11) { // - СѓСЃР»РѕРІРёРµ СЂР°Р±РѕС‚С‹ С†РёРєР»Р°
 		if (w >= 11)
 					System.out.println(w + " ");
 		else
 					System.out.print(w + " ");
-				w = w+2;	// - тело цикла
+				w = w+2;	// - С€Р°Рі С†РёРєР»Р°
 				}	
 					
-		System.out.print("Цикл WHILE_DO(постусловие) - ");	
+		System.out.print("Р¦РёРєР» WHILE_DO(РїРѕСЃС‚СѓСЃР»РѕРІРёРµ) - ");	
 		int d = 1;		
 		do {
 		if (d >= 11)
 					System.out.println(d + " ");
 		else
 					System.out.print(d + " ");
-					d = d + 2;	// - тело цикла
+					d = d + 2;	// - С€Р°Рі С†РёРєР»Р°
 				} 
-		while (d <= 11); // - условие после цикла
+		while (d <= 11); // - СѓСЃР»РѕРІРёРµ СЂР°Р±РѕС‚С‹ С†РёРєР»Р°
 				
-		System.out.print("Цикл с BREAK  - ");
+		System.out.print("Р¦РёРєР» СЃ BREAK  - ");
 		for (int a = 1; a < 11; a = a + 2){
 		if (a > 7)
-					// break - выход из цикла до окончания его работы при i > 7
+					// break - РѕСЃС‚Р°РЅР°РІРёР»РёРІР°РµС‚ С†РёРєР» РїСЂРё РѕРїСЂРµРґРµР»РµРЅРЅРѕРј СѓСЃР»РѕРІРёРё(i > 7)
 		break;	
 		if (a >= 7)
 						System.out.println(a +" ");
@@ -57,10 +57,10 @@ public class Cуcles1 {
 					System.out.print(a +" ");
 				}	
 				
-		System.out.print("Цикл с CONTINUE - ");
+		System.out.print("Р¦РёРєР» СЃ CONTINUE - ");
 		for (int s = 1; s <= 11; s = s + 2){
 		if (s == 7)
-						// continue - переход к следующей операции при s = 7(пропуск всех операций при s = 7)
+						// continue - РїСЂРѕРїСѓСЃРє РѕРїРµСЂР°С†РёРё С†РёРєР»Р°(СѓСЃР»РѕРІРёРµ РїСЂРѕРїСѓСЃРєР° s = 7)
 		continue;	
 				System.out.print(s +" ");
 				}						

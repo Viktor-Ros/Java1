@@ -1,7 +1,7 @@
-package ЗадачиМассивыЦиклы;
+package TasksArraysCycles;
 
 //*
-//* Сортировка элементов массива по модулям
+//* РЎРѕСЂС‚РёСЂРѕРІРєР° РјР°СЃСЃРёРІР° РїРѕ РјРѕРґСѓР»СЏРј СЌР»РµРјРµРЅС‚РѕРІ
 //*
 
 import java.util.Arrays;
@@ -13,7 +13,7 @@ public class Arrays3 {
 
 		Integer [] arra = {4,-5,-1,2,-3};
 		Integer [] arr;
-		System.out.println("Массив " + Arrays.toString(arra));
+		System.out.println("РњР°СЃСЃРёРІ " + Arrays.toString(arra));
 		arr = new Integer[arra.length];
 			for(int i = 0; i<arra.length; i++) {
 				arr[i] = arra[i];
@@ -30,6 +30,6 @@ public class Arrays3 {
 				}
 			}
 	}
-		System.out.println("Сортированный массив по модулям " + Arrays.toString(arr));	
+		System.out.println("РњР°СЃСЃРёРІ РїРѕ РІРѕР·СЂР°СЃС‚Р°РЅРёСЋ РјРѕРґСѓР»РµР№ " + Arrays.toString(arr));	
 	}
 }

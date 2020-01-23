@@ -1,10 +1,10 @@
-package ЗадачиМассивыЦиклы;
+package TasksArraysCycles;
 
 //*
-//* Цикл в цикле(результаты таблицы умножения)
+//* Р¦РРєР» РІ С†РёРєР»Рµ(РўР°Р±Р»РёС†Р° СѓРјРЅРѕР¶РµРЅРёСЏ)
 //*
 
-public class Cуcles2 {
+public class CСѓcles2 {
 	public static void main(String[] args) {
 		
 		for (int i = 1; i < 11; i = i + 1){

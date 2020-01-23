@@ -1,9 +1,9 @@
-package ЗадачиМассивыЦиклы;
+package TasksArraysCycles;
 
 /*
  * 
- * Разные операции с рукописным массивом
- * Классы: Array1, Enter
+ * Р Р°Р·РЅС‹Рµ РѕРїРµСЂР°С†РёРё СЃ РјР°СЃСЃРёРІР°РјРё
+ * РљР»Р°СЃСЃС‹: Array1, Enter
  * 
  */
 
@@ -16,29 +16,29 @@ public class Arrays1 {
 		Enter ent = new Enter();
 		ent.enter1();
 		Integer[] arrayone = {ent.a, ent.b, ent.c, ent.d};
-		System.out.println("Массив " + Arrays.toString(arrayone));
+		System.out.println("" + Arrays.toString(arrayone));
 		
 		Arrays.sort(arrayone, 0, 4);
-		System.out.println("Массив по возрастанию " + Arrays.toString(arrayone));
+		System.out.println("РњР°СЃСЃРёРІ РїРѕ РІРѕР·СЂР°СЃС‚Р°РЅРёСЋ " + Arrays.toString(arrayone));
 		
 		Arrays.sort(arrayone, Collections.reverseOrder());
-		System.out.println("Массив по убыванию " + Arrays.toString(arrayone));
+		System.out.println("РњР°СЃСЃРёРІ РїРѕ СѓР±С‹РІР°РЅРёСЋ " + Arrays.toString(arrayone));
 		
-		System.out.println("Длинна массива " + arrayone.length);
+		System.out.println("РљРѕР»-РІРѕ СЌР»РµРјРµРЅС‚РѕРІ РІ РјР°СЃСЃРёРІРµ " + arrayone.length);
 		
 		int sum = 0;
 		for( int num : arrayone) {
 	       sum = sum+num;
 	      }
-	      System.out.println("Сумма элементов массива " + sum);
+	      System.out.println("РЎСѓРјРјР° СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР° " + sum);
 	      
 		int mult = 1;
 			for( int num : arrayone) {
 				mult = mult*num;
 		      }
-		      System.out.println("Произведение элементов массива " + mult);
+		      System.out.println("РџСЂРѕРёР·РІРµРґРµРЅРёРµ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР° " + mult);
 	      
-	      System.out.println("Среднее значение элементов  массива " + sum/arrayone.length);
+	      System.out.println("РЎСЂРµРґРЅРµРµ Р·РЅР°С‡РµРЅРёРµ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР° " + sum/arrayone.length);
 	      
 	    Integer max = arrayone[0];
 	      for (int i = 0; i < arrayone.length; i++) {
@@ -47,7 +47,7 @@ public class Arrays1 {
 	      	}
 	      }
 	      
-	      System.out.println("Самый большой элемент массива " + max);
+	      System.out.println("РњР°РєСЃРёРјР°Р»СЊРЅС‹Р№ СЌР»РµРјРµРЅС‚ РјР°СЃСЃРёРІР° " + max);
 	      
 	    Integer min = arrayone[0];
 	      for (int i = 0; i < arrayone.length; i++) {
@@ -56,16 +56,16 @@ public class Arrays1 {
 	      	}
 	      }
 	      
-	      System.out.println("Самый маленький элемент массива " + min);
+	      System.out.println("РњРёРЅРёРјР°Р»СЊРЅС‹Р№ СЌР»РµРјРµРЅС‚ РјР°СЃСЃРёРІР° " + min);
 	      
 	      for (int i = 0; i < arrayone.length; i++) {
 	      if (arrayone[i]%2==0) {
-	      System.out.println("Четный элемент массива " + arrayone[i]);
+	      System.out.println("Р§РµС‚РЅС‹Р№ СЌР»РµРјРµРЅС‚ РјР°СЃСЃРёРІР° " + arrayone[i]);
 	}
 }
 	      for (int i = 0; i < arrayone.length; i++) {
 	      if (arrayone[i]%2-1==0) {
-	      System.out.println("Нечетный элемент массива " + arrayone[i]);
+	      System.out.println("РќРµС‡РµС‚РЅС‹Р№ СЌР»РµРјРµРЅС‚ РјР°СЃСЃРёРІР° " + arrayone[i]);
 	}
 }	      
 	      

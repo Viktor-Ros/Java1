@@ -1,8 +1,8 @@
-package ЗадачиМассивыЦиклы;
+package TasksArraysCycles;
 
 /*
  * 
- *Класс, считывает вводимые данные(для массива)
+ *пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ(пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
  *
  */
 import java.util.Scanner;
@@ -12,7 +12,7 @@ public class Enter {
 	Integer a, b, c, d;
 	
 	public void enter1() {
-	System.out.println("Введи числа");
+	System.out.println("Р’РІРµРґРё РјР°СЃСЃРёРІ");
 	a = new Scanner(System.in).nextInt();
 	b = new Scanner(System.in).nextInt();
 	c = new Scanner(System.in).nextInt();
