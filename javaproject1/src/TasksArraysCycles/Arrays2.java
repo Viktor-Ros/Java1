@@ -11,7 +11,7 @@ public class Arrays2 {
 
 	public static void main(String[] args) {
 	
-		Integer [] arr = {8,4,15,16,42,54,23};	//������� ������ arr �� 7 ��������� 
+		Integer [] arr = {8,4,15,16,42,54,23};
 		int c = 0;
 		int d = 1;
 		int e = 0;
