@@ -1,4 +1,4 @@
-package Наследование;
+package Nasledovanie;
 
 public class Car {
 
@@ -13,10 +13,10 @@ return weight;
 String types() {
 return type;
 }
-public String getColor() { //Геттер
+public String getColor() { //Р“РµС‚С‚РµСЂ
 return color;
 }
-public int getPrice() { //Геттер
+public int getPrice() { //Р“РµС‚С‚РµСЂ
 return price;
 }
 }

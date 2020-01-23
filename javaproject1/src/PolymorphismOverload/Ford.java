@@ -1,4 +1,4 @@
-package ПолиморфизмПерезапись;
+package PolymorphismOverload;
 
 public class Ford {
 

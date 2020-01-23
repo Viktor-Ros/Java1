@@ -1,4 +1,4 @@
-package Èםעונפויסû;
+package Iinterface;
 
 public class Car implements InterfaceColor, IinterfacePrice {
 	public void color() {

@@ -1,4 +1,4 @@
-package ПолиморфизмПерезапись;
+package PolymorphismOverride;
 
 public class Ford_plus extends Ford{
 	

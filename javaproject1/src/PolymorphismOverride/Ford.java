@@ -1,4 +1,4 @@
-package ПолиморфизмПерегрузка;
+package PolymorphismOverride;
 
 public class Ford {
 

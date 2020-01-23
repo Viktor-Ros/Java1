@@ -1,4 +1,4 @@
-package Èםעונפויסû;
+package Iinterface;
 
 public interface IinterfacePrice {
 

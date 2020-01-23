@@ -1,4 +1,4 @@
-package Наследование;
+package Nasledovanie;
 
 public class Chevrolet extends Car {
 
