@@ -1,6 +1,4 @@
-
-
-package АбстрактныеКлассыМетоды;
+package AbstractClassesMethods;
 
 public class Ferm {
 	
@@ -8,7 +6,7 @@ public class Ferm {
 public static void main(String args[]) {
 	Pig pig = new Pig();
 	Dog dog = new Dog();
-	Сow cow = new Сow();
+	РЎow cow = new РЎow();
 	pig.animal();
 	dog.animal();
 	cow.animal();

@@ -1,7 +1,7 @@
-package АбстрактныеКлассыМетоды;
+package AbstractClassesMethods;
 
-public class Сow extends Animalsferm {
-	String cow = "Милка";
+public class РЎow extends Animalsferm {
+	String cow = "РњРёР»РєР°";
 	
 	@Override
 	public void animal() {

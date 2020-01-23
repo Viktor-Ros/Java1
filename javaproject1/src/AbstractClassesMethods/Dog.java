@@ -1,7 +1,7 @@
-package јбстрактные лассыћетоды;
+package AbstractClassesMethods;
 
 public class Dog extends Animalsferm {
-	String dog = "ѕес";
+	String dog = "–Я–µ—Б";
 	
 	@Override
 	public void animal() {
