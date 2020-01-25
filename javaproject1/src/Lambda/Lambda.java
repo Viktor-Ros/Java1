@@ -16,8 +16,8 @@ public class Lambda{
 
 
     public static void main(String[] args) {  
-    	
-    	// Стандартный код реализации метода
+
+    	// Код реализации интерфейса
     	
     	InterfaceLambda in = new InterfaceLambda() {
     		@Override
@@ -25,19 +25,18 @@ public class Lambda{
 				return a + b;
 			}
     	};
-    	System.out.println(in.variable(5,4) + " - Сумма без лямбды");
+    	System.out.println(in.variable(3,4) + " - Сумма без лямбды");
     	
-    	// Конец стандартного кода реализации метода(7 строк)
+    	// Конец реализации интерфейса(7 строк)
     	
     	
-    	
-// Реализация метода через лямбду
+// Реализация интерфейса через лямбду
     	
 InterfaceLambda s1;
 s1 = (a,b) -> a + b;
 System.out.println(s1.variable(5,4) + " - Сумма c лямбдой");
 
-//Конец стандартного кода реализации метода(3 строки)
+//Конец кода реализации интерфейса(3 строки)
 
 InterfaceLambda s2;
 s2 = (a,b) -> a * b;
