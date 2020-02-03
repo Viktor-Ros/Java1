@@ -1,4 +1,4 @@
-package Iinterface;
+package Interface;
 
 public interface InterfaceColor {
 	

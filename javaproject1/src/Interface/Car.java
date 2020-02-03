@@ -1,6 +1,6 @@
-package Iinterface;
+package Interface;
 
-public class Car implements InterfaceColor, IinterfacePrice {
+public class Car implements InterfaceColor, InterfacePrice {
 	public void color() {
 		System.out.println("Color: Red");
 	}
