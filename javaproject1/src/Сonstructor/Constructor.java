@@ -1,38 +1,40 @@
 package Сonstructor;
 
 //*
-//* Конструктор, каркас класса. Содержит необходимые элементы(model, max Speed) для создания объекта(Ford)
+//* КОНСТРУКТОР
+//* классы: Car, Constructor
+//* Конструктор, каркас класса. Содержит необходимые элементы(model, max Speed) для создания объекта(Ford, Mersedes)
 //* Без названия аргументов("Ford Mustang", 407) программа выдает ошибку
 //* Конструктор, как метод, только без типа возвращаемого значения
 //* Название конструктора = названия класса
 //* this - слово позволяет использовать переменную(model) именно из конструктора, а не общую переменную класса
 //*
 
-public class Сonstructor {
+public class Constructor {
 
 	   String model = "Москвич";
 	   int maxSpeed;
+	   int a;
 
-	    Сonstructor(String model, int maxSpeed) { // Конструктор
+	    Constructor(String model, int maxSpeed) { // Конструктор
 	      this.model = model;
-	      this.maxSpeed = maxSpeed; 
+	      this.maxSpeed = maxSpeed;
 	   }
 	        
-	    Сonstructor(String model) { // Перезаписанный конструктор
-	    	this.model = model; // Без слова this вместо SLK будет Москвич
+	    Constructor(String model) { // Перезаписанный конструктор
+	    	this.model = model; // Без слова this в классе Car вместо SLK будет Москвич
 		   }
 	    
-	    Сonstructor() { // - Дефолтный конструктор, если не знаем параметров model и maxSpeed
+	    Constructor() { // - Дефолтный конструктор, если не знаем параметров model и maxSpeed
 	    	System.out.println("model и maxSpeed неизвестны");
 		   }
-
+	    
 	   public static void main(String[] args) {
-		   
-		   Сonstructor Ford = new Сonstructor("Ford Mustang", 407);
-	       System.out.println("Модель:" + Ford.model + '\n' + "Максимальная скорость:" + Ford.maxSpeed);
-	       
-	       Сonstructor Mersedes = new Сonstructor("SLK");
-	       System.out.println("Модель:" + Mersedes.model);
-	   }
-
+			   
+			   Constructor Ford = new Constructor("Ford Mustang", 407);
+		       System.out.println("Модель:" + Ford.model + '\n' + "Максимальная скорость:" + Ford.maxSpeed);
+		       
+		       Constructor Mersedes = new Constructor("SLK");
+		       System.out.println("Модель:" + Mersedes.model);  
+		   }
 }
