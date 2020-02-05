@@ -7,7 +7,7 @@ package Сonstructor;
 //* Без названия аргументов("Ford Mustang", 407) программа выдает ошибку
 //* Конструктор, как метод, только без типа возвращаемого значения
 //* Название конструктора = названия класса
-//* this - слово позволяет использовать переменную(model) именно из конструктора, а не общую переменную класса
+//* this - слово позволяет использовать переменную(model) именно из аргументов конструктора, а не общую переменную класса
 //*
 
 public class Constructor {
@@ -32,6 +32,9 @@ public class Constructor {
 	   public static void main(String[] args) {
 			   
 			   Constructor Ford = new Constructor("Ford Mustang", 407);
+		       System.out.println("Модель:" + Ford.model + '\n' + "Максимальная скорость:" + Ford.maxSpeed);
+		       
+			   Constructor Ford1 = new Constructor("Ford Mustang", 407);
 		       System.out.println("Модель:" + Ford.model + '\n' + "Максимальная скорость:" + Ford.maxSpeed);
 		       
 		       Constructor Mersedes = new Constructor("SLK");
