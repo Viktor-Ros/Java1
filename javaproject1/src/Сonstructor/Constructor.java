@@ -1,5 +1,6 @@
 package Сonstructor;
 
+
 //*
 //* КОНСТРУКТОР
 //* классы: Car, Constructor
@@ -14,7 +15,6 @@ public class Constructor {
 
 	   String model = "Москвич";
 	   int maxSpeed;
-	   int a;
 
 	    Constructor(String model, int maxSpeed) { // Конструктор
 	      this.model = model;
@@ -38,6 +38,8 @@ public class Constructor {
 		       System.out.println("Модель:" + Ford.model + '\n' + "Максимальная скорость:" + Ford.maxSpeed);
 		       
 		       Constructor Mersedes = new Constructor("SLK");
-		       System.out.println("Модель:" + Mersedes.model);  
+		       System.out.println("Модель:" + Mersedes.model);
+		       
+		       Constructor Chevrolet = new Constructor();
 		   }
 }
