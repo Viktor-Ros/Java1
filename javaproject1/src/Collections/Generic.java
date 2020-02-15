@@ -25,6 +25,8 @@ public class Generic {
 		Car.add(28);
 		
 		System.out.println(Car);
+		System.out.println("Размер: " + Car.size());
+		System.out.println("4 элемент Car: " + Car.get(4));
 		
 		ArrayList<String> Ferm = new ArrayList<>();//Дженерик <String>
 		
