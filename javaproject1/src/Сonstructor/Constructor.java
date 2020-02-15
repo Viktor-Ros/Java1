@@ -16,7 +16,7 @@ public class Constructor {
 	   String model = "Москвич";
 	   int maxSpeed;
 
-	    Constructor(String model, int maxSpeed) { // Конструктор
+	   public Constructor(String model, int maxSpeed) { // Конструктор
 	      this.model = model;
 	      this.maxSpeed = maxSpeed;
 	   }
