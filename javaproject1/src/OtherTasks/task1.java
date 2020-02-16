@@ -32,14 +32,9 @@ static int c;
 
 		int e = Integer.parseInt(a);
 		
-		
-		
 		b = c + e;
 		c = b;
 		
-
-			
 		}
-	
-}
+	}
 }
