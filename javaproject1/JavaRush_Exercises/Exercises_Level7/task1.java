@@ -34,43 +34,24 @@ public class task1 {
             System.out.println(string);
         }
     }
-
-	
-	
 	
     public static ArrayList<String> fix(ArrayList<String> strings) { 
     
         ArrayList<String> stringsR = new ArrayList<String>();
         ArrayList<String> stringsL = new ArrayList<String>();
         
-    	
-    	for(int i = 0; i < strings.size(); i++) {	
-    		
-    		int r = 0;
-    		int l = 0;
-    		
-        	for(int j = 0; j < strings.get(i).length(); j++) {		
-        		
-        		if(strings.get(i).charAt(j) == 'л') {
-        			
-        			l++;
-        		}
-    		
-        		if(strings.get(i).charAt(j) == 'р') {
-        			
-        			r++;
-        		}
-        	}
-        			if(r == 0 && l != 0) {
-        				stringsL.add(strings.get(i));
-        			}
+        for(int i = 0; i < strings.size(); i++) {
         	
-        			if(r != 0 && l == 0) {
-        				stringsR.add(strings.get(i));
-        			}
-    	}
-    	
- 
+        	if(strings.get(i).indexOf('л') >= 0 && strings.get(i).indexOf('р') < 0) {
+        		stringsL.add(strings.get(i));
+        	}
+        	
+        	if(strings.get(i).indexOf('р') >= 0 && strings.get(i).indexOf('л') < 0) {
+        		stringsR.add(strings.get(i));
+        	}
+        	
+        }
+        
     	strings.removeAll(stringsR);
     	strings.addAll(stringsL);
     	
@@ -78,21 +59,3 @@ public class task1 {
         
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
