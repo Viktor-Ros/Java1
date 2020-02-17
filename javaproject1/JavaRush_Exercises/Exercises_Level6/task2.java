@@ -17,12 +17,12 @@ public class task2 {
 
 		    public static void main(String[] args) throws IOException {
 		        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-	        
+	            
 		        String grannyDead = reader.readLine();
-		        Cat catDead = new Cat(grannyDead);
+		        Cat catDead = new Cat(grannyDead, null, null);
 		        
 		        String grannyBabka = reader.readLine();
-		        Cat catBabka = new Cat(grannyBabka);
+		        Cat catBabka = new Cat(grannyBabka, null, null);
 		        		        
 		        String dadName = reader.readLine();
 		        Cat catDad = new Cat(dadName, catDead, null);
@@ -49,10 +49,6 @@ public class task2 {
 		        private Cat dad;
 		        private Cat mom;
 
-		        Cat(String name) {
-		            this.name = name;
-		        }
-
 		        Cat(String name, Cat dad, Cat mom) {
 		            this.name = name;
 		            this.dad = dad;
@@ -61,18 +57,18 @@ public class task2 {
 		          
 		        @Override
 		        public String toString() {
-		        	
-		            if (dad != null && mom == null)
-		                return "The cat's name is " + name + ", no mother, father is " + dad.name;	
+		        	String momString = null; 
+		        	String dadString = null; 
 		            
-		            if (mom != null && dad == null)
-		                return "The cat's name is " + name + ", mother is " + mom.name +", no father";
-		        	
-		            if (dad == null && mom == null)
-		                return "The cat's name is " + name + ", no mother, no father ";
-		                 
-		            else
-		                return "The cat's name is " + name + ", mother is " + mom.name + ", father is " + dad.name;
+		            if (mom == null) 
+		            momString = ", no mother"; 
+		            else momString = ", mother is " + mom.name; 
+		            
+		            if (dad == null) 
+		            dadString = ", no father"; 
+		            else dadString = ", father is " + dad.name; 
+		           		                 
+		            return "The cat's name is " + name + momString + dadString;
 		        }
 		    }
 		}
