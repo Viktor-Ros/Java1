@@ -2,16 +2,18 @@ package Exercises_Level8;
 
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.ListIterator;
-import java.util.Map;
-import java.util.Map.Entry;
 import java.util.Scanner;
-import java.util.Set;
+
+/*
+ * 
+ * 1. Создай список чисел.
+ * 2. Добавь в список 10 чисел с клавиатуры.
+ * 3. Вывести на экран длину самой длинной последовательности повторяющихся чисел в списке.
+ * 
+ * 
+ * Оказывается int больше 127 нужно сравнивать через equals()
+ */
 
 public class task1 {
 
