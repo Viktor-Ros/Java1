@@ -36,7 +36,7 @@ public class task2 {
 		        String daughterName = reader.readLine();
 		        Cat catDaughter = new Cat(daughterName, catDad, catMother);
 		          
-		        System.out.println(catDead);
+		        catDead.toString();
 		        System.out.println(catBabka);
 		        System.out.println(catDad);
 		        System.out.println(catMother);		        
