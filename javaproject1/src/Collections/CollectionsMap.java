@@ -2,6 +2,7 @@ package Collections;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 
@@ -22,7 +23,7 @@ public class CollectionsMap {
 	public static void main(String[] args) {
 		
 		
-		HashMap<Integer, String> Ferm1 = new HashMap<>();//HashMap нужен для быстрого поиска 
+		Map<Integer, String> Ferm1 = new HashMap<>();//HashMap нужен для быстрого поиска 
 		       //int - тип ключей, str - тип значений
 		
 	  Ferm1.put(11,"Cow");
@@ -62,7 +63,7 @@ public class CollectionsMap {
 	
 	
 	
-	HashMap<Integer, String> Ferm3 = new HashMap<>();//TreeMap - хранит элементы по порядку ключей
+	TreeMap<Integer, String> Ferm3 = new TreeMap<>();//TreeMap - хранит элементы по порядку ключей
 
 	Ferm3.put(11,"Cow");
 	Ferm3.put(14,"Pig");

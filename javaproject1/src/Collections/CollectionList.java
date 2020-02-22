@@ -42,7 +42,7 @@ public class CollectionList {
 		Ferm1.add("cow");
 		Ferm1.add("pig");
 		Ferm1.add("cow");
-
+		Ferm1.clear();
 		System.out.println(Ferm1);
 		
 		Ferm1.remove("pig");// удаление элемента "pig", можно удалять по индексу
