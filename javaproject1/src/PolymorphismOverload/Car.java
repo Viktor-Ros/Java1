@@ -14,12 +14,15 @@ public class Car {
 	
 	static int a = 4;
 	static String b = "four";
+	static String c = "five";
+	static String d = "six";
 	
 	public static void main(String[] args) {
 		
 		Ford ford = new Ford();
 		ford.fordmodel(a);
 		ford.fordmodel(b);
+		ford.fordmodel(c,d);
 
 }
 }
