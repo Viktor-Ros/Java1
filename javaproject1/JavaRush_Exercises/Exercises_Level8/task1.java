@@ -20,7 +20,6 @@ public class task1 {
     public static void main(String[] args) {
 
     	List<Integer> list = new ArrayList<Integer>();
-    	List<Integer> list1 = new ArrayList<Integer>();
     	
     	for(int i = 0; i < 10; i++) {
     		int x = new Scanner(System.in).nextInt();
@@ -38,14 +37,6 @@ public class task1 {
         			b = a;	
     			}
     		}
-    		if(!list.get(i).equals(list.get(i+1))) {
-    			list1.add(a);
-    			a = 1;
-    		}
-    		
-    		if(i == list.size()-2) {
-    			list1.add(a);
-    		}	
     	}
     	System.out.println(b);    	
     }
