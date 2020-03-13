@@ -21,8 +21,9 @@ public class ReaderFile {
 		
 		Scanner scan = new Scanner(FermReader);
 		
-		while (scan.hasNextLine()) {
-            System.out.println(scan.nextLine());
+		while (scan.hasNextInt()) {
+			int i = scan.nextInt();
+            System.out.println(i);
         }
 
 		FermReader.close();
