@@ -1,6 +1,6 @@
 package JavaCore_Level6_Thread;
 
-public class Gagarin implements Runnable{//Класс должен реализовывать интерфейс Runnable, чтобы его объект можно было запускать в потоке
+class Gagarin implements Runnable{//Класс должен реализовывать интерфейс Runnable, чтобы его объект можно было запускать в потоке
 	
 	public void run() {
 		

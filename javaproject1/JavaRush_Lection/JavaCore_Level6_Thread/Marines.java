@@ -1,6 +1,6 @@
 package JavaCore_Level6_Thread;
 
-public class Marines implements Runnable{
+class Marines implements Runnable{
 	
 	public void run(){
 		
