@@ -10,10 +10,15 @@ package JavaCore_Level6_Thread;
  * - Одновременное выполнение нескольких действий
  * - Ускорение вычислений(если процессор многоядерный)
  * 
- * Мы не можем контролировать последовательность выполнения потоков
+ * Мы не можем контролировать последовательность(порядок) выполнения потоков
  * 
  * Gagarin - класс с методом run, поток будет выполнять код внутри run
  * threadUra - поток с объектом класса Gagarin в качестве параметра
+ * 
+ * гонка
+ * взаимная блокировка
+ * 
+ * отличия interrapt от interrapted
  * 
  */
 
@@ -30,6 +35,7 @@ public class StartThread {
 		Thread threadNatalya = new Thread(Natalya);
 		
 		threadUra.start();//запуск потока threadUra
+		System.out.println("Статус потока " + threadUra.getName() + ": " + threadUra.isAlive());//
 
 		threadUra.sleep(2000);//приостанавливает поток threadUra на 2000милисекунд(2 секунды)
 		
