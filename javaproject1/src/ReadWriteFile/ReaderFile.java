@@ -1,4 +1,4 @@
-package RecordReadingDeletionFiles;
+package ReadWriteFile;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;

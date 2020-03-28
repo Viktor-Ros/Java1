@@ -1,4 +1,4 @@
-package RecordReadingDeletionFiles;
+package ReadWriteFile;
 
 import java.io.File;
 
