@@ -10,7 +10,7 @@ import java.io.IOException;
  * 
  * ПОТОКИ ВВОДА/ВЫВОДА БАЙТОВ
  * 
- * классы: InputOutPutStream
+ * класс: InputOutPutStream
  * 
  * InputStream/OutputStream - потоки ввода/вывода для работы с байтами(byte)
  * методы read()/write() могут записывать/считывать данные блоками в виде массива write/read(byte[] buff)
