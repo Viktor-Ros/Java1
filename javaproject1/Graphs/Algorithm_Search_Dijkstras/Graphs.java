@@ -1,8 +1,6 @@
 package Algorithm_Search_Dijkstras;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 
 /*
  * 
