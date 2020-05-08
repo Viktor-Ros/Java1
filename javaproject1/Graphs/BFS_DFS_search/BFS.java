@@ -6,49 +6,56 @@ import java.util.Arrays;
 import java.util.Stack;
 
 /*
+ * ОБХОД В ШИРИНУ
  * 
- * Заносим узел в очередь
- * Делаем узел true
+ * Breadth First Search(BFS)
+ * 
+ * классы: BFS, Graphs
+ * 
+ * Заносим false(непосещенный) узел в очередь
+ * Делаем узел true(посещенным)
  * Заносим в очередь потомков
  * Удаляем узел
- * 
+ * Повторяем, пока чередь не опустеет
  * 
  */
 
 
 public class BFS {
 	
-	public static void BFS(ArrayList<Integer>[] arr) {//Обход в ширину
+	public static void Search(ArrayList<Integer>[] graph) {
 		
-		boolean[] ar = new boolean[arr.length];//массив узлов, если узел посещен -  он true
+		System.out.println("--------------------------------------");
+		
+		boolean[] arraVertex = new boolean[graph.length];//массив узлов, если узел посещен -  он true
 				
-		ArrayDeque<Integer> list = new ArrayDeque<Integer>();//очередь
+		ArrayDeque<Integer> deque = new ArrayDeque<Integer>();//очередь
 			
-		list.add(0);//заносим первый узел в начало очереди
+		deque.add(0);//заносим первый узел в начало очереди
 		
-		ar[list.getFirst()] = true;//делаем первый узел из очереди true
+		arraVertex[deque.getFirst()] = true;//делаем первый узел из очереди true
 
-		while(!list.isEmpty()) {//цикл работает пока очередь не пустая
+		System.out.println(Arrays.toString(arraVertex));
+
+		while(!deque.isEmpty()) {//цикл работает пока очередь не пустая
 			
-			int a = arr[list.getFirst()].size();//кол-во смежных узлов первого узла из очереди
-			
-			for(int i = 0; i < a; i++) {//перебираем смежные узлы первого узла из очереди
+			for(int i = 0; i < graph[deque.getFirst()].size(); i++) {//перебираем смежные узлы первого узла из очереди
 				
-				int b = arr[list.getFirst()].get(i);//смежный узел первого узла из очереди
+				int vertex = graph[deque.getFirst()].get(i);//смежный узел первого узла из очереди
 				
-				if(ar[b] == false) {//если узел не true
+				if(arraVertex[vertex] == false) {//если узел не true
 				
-					list.addLast(b);//добавляем узел в конец очереди
+					deque.addLast(vertex);//добавляем узел в конец очереди
 					
-					ar[b] = true;//делаем узел true
+					arraVertex[vertex] = true;//делаем узел true
 				}
 			}
 			
-			list.removeFirst();//удаляем первый узел из очереди
+			deque.removeFirst();//удаляем первый узел из очереди
 			
-			System.out.println(Arrays.toString(ar));
-
-			System.out.println(list);
+			System.out.println(deque);
+			
+			System.out.println(Arrays.toString(arraVertex));
 
 		}
 	}	

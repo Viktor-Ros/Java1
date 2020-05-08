@@ -4,19 +4,36 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Stack;
 
+/*
+ * ОБХОД В ГЛУБИНУ
+ * 
+ * Depth First Search(DFS)
+ * 
+ * классы: DFS, Graphs
+ * 
+ * Заносим false(непосещенный) узел в очередь
+ * Делаем узел true(посещенным)
+ * У последнего true узла выбираем смежный false узел и делаем его true
+ * Если такого узла нет, ищем его у предпоследнего узла и тд
+ * Повторяем, пока все вершины не станут true
+ * 
+ */
+
 public class DFS {
 	
-	public static void DFS(ArrayList<Integer>[] arrayGraphs) {
+	public static void Search(ArrayList<Integer>[] arrayGraphs) {
 		
-		boolean[] arraySearch = new boolean[arrayGraphs.length];//массив узлов, если узел посещен -  он true
+		System.out.println("--------------------------------------");
+		
+		boolean[] arraVertex = new boolean[arrayGraphs.length];//массив узлов, если узел посещен -  он true
 				
-		Stack<Integer> stack = new Stack<>();
+		Stack<Integer> stack = new Stack<>();//стек
 		
 		stack.push(0);//заносим первый узел в стек
 		
-		arraySearch[stack.firstElement()] = true;//делаем первый узел true
+		arraVertex[stack.firstElement()] = true;//делаем первый узел true
 
-		System.out.println(Arrays.toString(arraySearch));	
+		System.out.println(Arrays.toString(arraVertex));	
 
 		while(!stack.empty()) {//пока стек не пустой
 			
@@ -24,17 +41,17 @@ public class DFS {
 
 			for(int j = 0; j < arrayGraphs[unit].size(); j++) {//перебор смежных узлов
 				
-				if(!arraySearch[arrayGraphs[unit].get(j)]) {//если смежный узел не true 
+				if(!arraVertex[arrayGraphs[unit].get(j)]) {//если смежный узел не true 
 
 					stack.push(arrayGraphs[unit].get(j));//помещаем смежный узел в стек
 					
-					arraySearch[arrayGraphs[unit].get(j)] = true;//делаем смежный узел true
+					arraVertex[arrayGraphs[unit].get(j)] = true;//делаем смежный узел true
 				}
 			}
 			
 			System.out.println(stack);	
 
-			System.out.println(Arrays.toString(arraySearch));	
+			System.out.println(Arrays.toString(arraVertex));	
 			
 		}
 	}
