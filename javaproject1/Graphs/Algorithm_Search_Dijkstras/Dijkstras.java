@@ -1,5 +1,6 @@
 package Algorithm_Search_Dijkstras;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Stack;
@@ -39,21 +40,21 @@ public class Dijkstras {
 		
 		System.out.println(Arrays.toString(arrayMinLength));
 		
-		Stack<Integer> stack = new Stack<>();//очередь из узлов
+		ArrayDeque<Integer> deque = new ArrayDeque<Integer>();//очередь из узлов
 		
-		stack.push(vertexSearsh);//добавляем в стек главный узел
+		deque.push(vertexSearsh);//добавляем в очередь главный узел
 		
-		while(!stack.empty()) {//пока стек не пустой
+		while(!deque.isEmpty()) {//пока очередь не пустая
 			
-			int vertex = stack.pop();//убираем из стека верхний узел
+			int vertex = deque.pop();//убираем из очереди верхний узел
 			
-			for(int i = 0; i < graph[vertex].size(); i++) {//перебираем узлы, смежные с верхним узлом стека
+			for(int i = 0; i < graph[vertex].size(); i++) {//перебираем узлы, смежные с верхним узлом учереди
 				
 				if(arrayMinLength[vertex] + graph[vertex].get(i) < arrayMinLength[i]) {//если путь между узлами меньше текущего
 					
 					arrayMinLength[i] = arrayMinLength[vertex] + graph[vertex].get(i);//устанавливаем новый путь
 					
-					stack.push(i);//добавляем смежный узел в стек
+					deque.addLast(i);//добавляем смежный узел в конец очереди
 				}
 				
 			}
