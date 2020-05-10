@@ -22,6 +22,7 @@ import java.util.Stack;
  * После опять выбираем узел и ищем короткие пути
  * Повторяем пока не найдем все короткие пути
  * 
+ * 
  */
 
 
@@ -36,7 +37,7 @@ public class Dijkstras {
 		
 		boolean[] arrayVertex = new boolean[graph.length];//массив узлов, если узел посещен -  он true
 		
-		Arrays.fill(arrayMinLength, 10000);//заполняем массив числами, большими чем любой путь графа(в теории это бесконечности)
+		Arrays.fill(arrayMinLength, 1000000);//заполняем массив числами, большими чем любой путь графа(в теории это бесконечности)
 		
 		arrayMinLength[vertexSearsh] = 0;//путь от и до главного узла
 		

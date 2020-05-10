@@ -52,7 +52,7 @@ public class Graphs {
 			
 			for(int j = 0; j < arr.length; j++) {
 				
-				arr[i].add(100000);
+				arr[i].add(1000000);
 			}
 		}
 		
