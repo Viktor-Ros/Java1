@@ -34,15 +34,11 @@ public class Dijkstras {
 		System.out.println("--------------------------------------");
 				
 		int[] arrayMinLength = new int[graph.length];//массив с наименьшими путями
-		
-		boolean[] arrayVertex = new boolean[graph.length];//массив узлов, если узел посещен -  он true
-		
+				
 		Arrays.fill(arrayMinLength, 1000000);//заполняем массив числами, большими чем любой путь графа(в теории это бесконечности)
 		
 		arrayMinLength[vertexSearsh] = 0;//путь от и до главного узла
-		
-		arrayVertex[vertexSearsh] = true;
-		
+				
 		System.out.println(Arrays.toString(arrayMinLength));
 		
 		ArrayDeque<Integer> deque = new ArrayDeque<Integer>();//очередь из узлов
@@ -55,15 +51,13 @@ public class Dijkstras {
 			
 			for(int i = 1; i < graph[vertex].size(); i++) {//перебираем узлы, смежные с верхним узлом учереди
 				
-				if(arrayMinLength[vertex] + graph[vertex].get(i) < arrayMinLength[i] && arrayVertex[i] == false) {//если путь между узлами меньше текущего и текущий узел false
+				if(arrayMinLength[vertex] + graph[vertex].get(i) < arrayMinLength[i]) {//если путь между узлами меньше текущего и текущий узел false
 					
 					arrayMinLength[i] = arrayMinLength[vertex] + graph[vertex].get(i);//устанавливаем новый путь
 					
 					deque.addLast(i);//добавляем смежный узел в конец очереди
 					
-					arrayVertex[i] = true;
 				}
-				
 			}
 			
 			System.out.println(deque);
