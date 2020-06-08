@@ -11,79 +11,71 @@ public class Graphs {
 		
 	public static void main(String[] args) throws IOException {
 
-        //URL url = new URL("http://www.algorithmsilluminated.org/datasets/problem9.8test.txt");
-        URL url = new URL("http://www.algorithmsilluminated.org/datasets/problem9.8.txt");
+        //URL url = new URL("http://www.algorithmsilluminated.org/datasets/problem9.8test.txt");//маленький граф
+        URL url = new URL("http://www.algorithmsilluminated.org/datasets/problem9.8.txt");//большой граф
         
         BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));//поток чтения данных из url
         
-        String b;//строка из url
+        String urlString;//строка из url
         
-        ArrayList<ArrayList<String>> str = new ArrayList<>();//список строк
+        ArrayList<ArrayList<String>> strArray = new ArrayList<>();//список строк
         
-        while((b = in.readLine()) != null) {//добавление строк в список без пробелов
+        while((urlString = in.readLine()) != null) {//добавление строк в список без пробелов
         	
-        	str.add(new ArrayList<String>());
+        	strArray.add(new ArrayList<String>());
         	
     		int count = 0;
     		
-    		for(int i = 0; i < b.length(); i++) {
+    		for(int i = 0; i < urlString.length(); i++) {
     			
-    			
-    			if(b.charAt(i) == '	') {
-    				str.get(str.size() - 1).add(b.split("	")[count]);
+    			if(urlString.charAt(i) == '	') {
+    				strArray.get(strArray.size() - 1).add(urlString.split("	")[count]);
     				count++;
     			}
     			
-    			if(i == b.length() - 1 && b.charAt(i) != '	') {
-    				str.get(str.size() - 1).add(b.split("	")[count]);
+    			if(i == urlString.length() - 1 && urlString.charAt(i) != '	') {
+    				strArray.get(strArray.size() - 1).add(urlString.split("	")[count]);
     			}
     		}	
         }
 
         in.close();
         
-        System.out.println(str);
+        System.out.println(strArray);
        
-		ArrayList<Integer>[] arr = new ArrayList[str.size() + 1];//матрица смежности
+		ArrayList<Integer>[] graph = new ArrayList[strArray.size() + 1];//матрица смежности
 		
-		for(int i = 0; i < arr.length; i++) {
+		for(int i = 0; i < graph.length; i++) {
 			
-			arr[i] = new ArrayList<Integer>();
+			graph[i] = new ArrayList<Integer>();
 			
-			for(int j = 0; j < arr.length; j++) {
+			for(int j = 0; j < graph.length; j++) {
 				
-				arr[i].add(1000000);
+				graph[i].add(1000000);
 			}
 		}
 		
-	       System.out.println("-----------------------------------------------------");
-		
-		for(int i = 0; i < str.size(); i++) {//заполнение матрица смежности
+		for(int i = 0; i < strArray.size(); i++) {//заполнение матрица смежности
 						
-			ArrayList<String> a = str.get(i);
+			ArrayList<String> strVertex = strArray.get(i);//узел и его смежные узлы в списке строк
 			
-			int c = Integer.parseInt(a.get(0));
+			int vertex = Integer.parseInt(strVertex.get(0));//узел
 	        
-	        for(int j = 1; j < a.size(); j++) {
+	        for(int j = 1; j < strVertex.size(); j++) {
 	        	
-	        	String d = a.get(j);
+	        	String vertexAndLength = strVertex.get(j);
 	        	
-	        	int b1 = Integer.parseInt(d.split(",")[0]);//смежная вершина
-	        	int b2 = Integer.parseInt(d.split(",")[1]);//расстояние
+	        	int graphVertex = Integer.parseInt(vertexAndLength.split(",")[0]);//смежная вершина
+	        	int lengtVertex = Integer.parseInt(vertexAndLength.split(",")[1]);//расстояние
 	        	
-	        	arr[c].set(b1, b2);
+	        	graph[vertex].set(graphVertex, lengtVertex);
 	        }
-
-		}
-		
-		for(int i = 0; i < arr.length; i++) {
-		
-	        //System.out.println(arr[i]);
 		}
 
-	    System.out.println("-----------------------------------------------------");          
-        
-	    Dijkstras.Search(arr, 1);
+       
+	    //Dijkstras.Search(graph, 1);
+	    DijkstrasPQ.Search(graph, 1);
+
 
       }
 }
