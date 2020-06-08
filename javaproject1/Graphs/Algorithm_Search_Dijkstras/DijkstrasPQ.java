@@ -36,9 +36,10 @@ public static void Search(ArrayList<Integer>[] graph, int vertexSearsh) {//Ал�
                                     
             for (int i = 1; i < graph[vertex].size(); i++) {//перебираем все смежные узлы графа
             	  
-                if (arrayMinLength[vertex] + graph[vertex].get(i) < arrayMinLength[i]) {//если расстояние от узла u + расстояние до смежного его смежного узла 
+                if (arrayMinLength[vertex] + graph[vertex].get(i) < arrayMinLength[i]) {//если расстояние между узлами vertex и i меньше текущего
                 	
-                	arrayMinLength[i] = arrayMinLength[vertex] + graph[vertex].get(i); //минимальное расстояние до узла i через узел vertex
+                	
+                	arrayMinLength[i] = arrayMinLength[vertex] + graph[vertex].get(i); 
                 	
                 	deque.add(i);
                 }

@@ -60,9 +60,9 @@ public class Dijkstras {
             	  
                 if (arrayBool[k] == false 
                 		
-                		&& arrayMinLength[vertexMin] + graph[vertexMin].get(k) < arrayMinLength[k]) {
+                		&& arrayMinLength[vertexMin] + graph[vertexMin].get(k) < arrayMinLength[k]) {//если расстояние между узлами vertexMin и k меньше текущего и смежный узел k false
                 	
-                	arrayMinLength[k] = arrayMinLength[vertexMin] + graph[vertexMin].get(k);//минимальное расстояние до узла k через узел minVertex
+                	arrayMinLength[k] = arrayMinLength[vertexMin] + graph[vertexMin].get(k);
                 }
             }	
 		}
