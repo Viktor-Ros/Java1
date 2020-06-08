@@ -65,7 +65,7 @@ public class Graphs {
 	        	
 	        	String vertexAndLength = strVertex.get(j);
 	        	
-	        	int graphVertex = Integer.parseInt(vertexAndLength.split(",")[0]);//смежная вершина
+	        	int graphVertex = Integer.parseInt(vertexAndLength.split(",")[0]);//смежный узел
 	        	int lengtVertex = Integer.parseInt(vertexAndLength.split(",")[1]);//расстояние
 	        	
 	        	graph[vertex].set(graphVertex, lengtVertex);
@@ -75,7 +75,6 @@ public class Graphs {
        
 	    //Dijkstras.Search(graph, 1);
 	    DijkstrasPQ.Search(graph, 1);
-
 
       }
 }
