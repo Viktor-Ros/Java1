@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+	<classpathentry kind="src" path="Base"/>
+	<classpathentry kind="src" path="TypeClasses"/>
+	<classpathentry kind="src" path="Graphs"/>
+	<classpathentry kind="src" path="Algorithms"/>
+	<classpathentry kind="src" path="JavaRush"/>
+	<classpathentry kind="src" path="JavaRush_Exercises"/>
+	<classpathentry kind="src" path="JavaRush_Lection"/>
+	<classpathentry kind="src" path="OOP"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-12">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="src" path="TypeClasses"/>
+	<classpathentry kind="lib" path="C:/Users/Viktor/Desktop/sql/mysql-connector-java-8.0.20/mysql-connector-java-8.0.20.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
