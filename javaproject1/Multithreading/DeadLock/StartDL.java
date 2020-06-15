@@ -8,8 +8,6 @@ package DeadLock;
  * 
  * Взаимная блокировка - результат ошибки в проектировании программы 
  * 
- * отличия interrupt от interrupted
- * daemon problem
  * 
  */
 
