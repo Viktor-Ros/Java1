@@ -26,9 +26,9 @@ package BaseThread;
  * 
  */
 
-public class StartBaseThread {//level 6
+public class StartBaseThread {
 	
-	public static void main(String[] args) throws InterruptedException {//HashCode
+	public static void main(String[] args) throws InterruptedException {
 						
 		BaseThread1 baseThread1 = new BaseThread1("baseThread1");//создание объекта, который содержит метод run()
 		
