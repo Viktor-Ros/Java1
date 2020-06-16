@@ -20,7 +20,7 @@ public class Ferm {
             int age = 1;
             int weight = 100;
 
-        	AnimalFerm AnimalFerm = new AnimalFerm();
+        	InitializeFerm AnimalFerm = new InitializeFerm();
   
             System.out.println("Животное до инициализации: " + AnimalFerm.animal);
             
