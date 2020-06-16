@@ -1,6 +1,6 @@
 package AbstractClassesMethods;
 
-public class Сow extends Animalsferm {
+public class Сow extends AbstractFerm {
 	String cow = "Милка";
 	
 	@Override
