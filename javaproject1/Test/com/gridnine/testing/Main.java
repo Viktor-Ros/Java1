@@ -1,5 +1,6 @@
 package com.gridnine.testing;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 public class Main {
@@ -11,27 +12,20 @@ public class Main {
 		for(int i = 0; i < listFlight.size(); i++) {//перебор полетов
 			
 			System.out.println("Полет " + " ::::::::::::::::::::::::::::::::::::::::");
-
-			System.out.println(listFlight.get(i).toString());
-			
+			System.out.println(listFlight.get(i).toString());	
 		}
 		
 		System.out.println("------------------------------------------------------------------------------");
-	
-		Filters filters = new Filters(listFlight);
 		
+		Filters filters = new Filters(listFlight, LocalDateTime.now(), true, 2);
 		listFlight = filters.Filter();
 		
 		System.out.println("Полеты после фильтрации:");
-
-
+		
 		for(int i = 0; i < listFlight.size(); i++) {//перебор полетов
 			
 			System.out.println("Полет " + " ::::::::::::::::::::::::::::::::::::::::");
-
 			System.out.println(listFlight.get(i).toString());
-			
 		}
 	}
-
 }
