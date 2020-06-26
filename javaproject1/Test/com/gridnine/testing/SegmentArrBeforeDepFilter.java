@@ -12,7 +12,7 @@ public class SegmentArrBeforeDepFilter extends Filters{//исключает по
 	}
 	
 	@Override
-	boolean match(Flight flight) {//исключает полеты с сегментами у которых дата прилета раньше даты вылета
+	boolean match(Flight flight) {
 		
 		boolean indicator = true;
 		
