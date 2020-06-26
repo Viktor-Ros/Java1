@@ -8,27 +8,15 @@ public class Main {
 	public static void main(String[] args) {
 
 		List<Flight> listFlight = FlightBuilder.createFlights();
+		FlightBuilder.printFlightList(listFlight);		
 		
-		for(int i = 0; i < listFlight.size(); i++) {//перебор полетов
-			
-			System.out.println("Полет " + " ::::::::::::::::::::::::::::::::::::::::");
-
-			System.out.println(listFlight.get(i).toString());	
-		}
+		SearchFlights searchFlights = new SearchFlights();//searchFlights
 		
-		System.out.println("------------------------------------------------------------------------------");
+		searchFlights.search(listFlight, new DateExcludeFilter(LocalDateTime.now()));
+		searchFlights.search(listFlight, new SegmentArrBeforeDepFilter(true));
+		searchFlights.search(listFlight,  new LandTimeFilter(2));
 		
-		//listFlight = Filters.flihgtsFilters(listFlight, new Filter1(LocalDateTime.now()));
-		//listFlight = Filters.flihgtsFilters(listFlight, new Filter2(true));
-		//listFlight = Filters.flihgtsFilters(listFlight, new Filter3(2));
-		//listFlight = Filters.flihgtsFilters(listFlight, new OrFilters(new FlightExcludeFilter(LocalDateTime.now()), new SegmentArrBeforeDepFilter(true), new LandTimeFilter(2)));
-
-		listFlight = Filters.flihgtsFilters(listFlight, new AndFilters(new FlightExcludeFilter(LocalDateTime.now()), new SegmentArrBeforeDepFilter(true), new LandTimeFilter(2)));
-
-		for(int i = 0; i < listFlight.size(); i++) {//перебор полетов
-			
-			System.out.println("Полет " + " ::::::::::::::::::::::::::::::::::::::::");
-			System.out.println(listFlight.get(i).toString());
-		}
+		//searchFlights.search(listFlight, new OrFilters(new DateExcludeFilter(LocalDateTime.now()), new SegmentArrBeforeDepFilter(true), new LandTimeFilter(2)));
+		//searchFlights.search(listFlight, new AndFilters(new DateExcludeFilter(LocalDateTime.now()), new SegmentArrBeforeDepFilter(true), new LandTimeFilter(2)));
 	}
 }
