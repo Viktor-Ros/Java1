@@ -47,4 +47,41 @@ class FlightBuilder {
         
         return new Flight(segments);
     }
+    
+    static void printFlightList(List<Flight> listFlight) {//метод для вывода листа полетов
+    
+    	for(int i = 0; i < listFlight.size(); i++) {
+    		System.out.println("Полет " + " ::::::::::::::::::::::::::::::::::::::::");
+    		System.out.println(listFlight.get(i).toString());	
+    	}
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
