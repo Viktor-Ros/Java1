@@ -13,14 +13,17 @@ public class task1 {
     public static void main(String[] args){
     	
     	int even = 0, odd = 0;
-    	String a = new Scanner(System.in).nextLine();
+    	String number = new Scanner(System.in).nextLine();
     	
-    	for(int i = 0; i < a.length(); i++) {
+    	for(int i = 0; i < number.length(); i++) {
     		
-    		char b = a.charAt(i);
-    		if(b%2 == 0) {
-            	even++;
-    		} else odd++;
+    		char num = number.charAt(i);
+    		
+    		if(Character.isDigit(num)){
+        		if(num%2 == 0) {
+                	even++;
+        		} else odd++;
+    		}
     	}
     	
     	System.out.println("Четные: " + even);
