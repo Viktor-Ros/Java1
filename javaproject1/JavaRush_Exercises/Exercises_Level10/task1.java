@@ -37,8 +37,8 @@ public class task1 {
 	    	String str = new Scanner(System.in).nextLine();
 	            
 	    	for(int j = 0; j < str.length(); j++) {
-	    		char b = str.charAt(j);			
-	    		map.replace(b, map.get(b) + 1);
+	    		char letter = str.charAt(j);	
+	    		map.replace(letter, map.get(letter) + 1);
 	    	}	
 	    }
 			
