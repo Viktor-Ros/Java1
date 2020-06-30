@@ -8,6 +8,10 @@ import java.sql.*;
  * 
  * 
  * 
+ * 
+ * JDBC(Java DataBase Connectivity) - инструмент для работы Java  с БД
+ * 
+ * 
  */
 
 public class BaseOperationSQL {
