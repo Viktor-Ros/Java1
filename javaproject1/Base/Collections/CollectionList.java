@@ -8,6 +8,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
+import java.util.stream.Stream;
 
 /*
  * 
@@ -44,7 +45,7 @@ public class CollectionList {
 		Ferm1.add("cow");
 		Ferm1.clear();
 		System.out.println(Ferm1);
-		
+
 		Ferm1.remove("pig");// удаление элемента "pig", можно удалять по индексу
 		Ferm1.indexOf("pig");// Поиск индекса элемента
 		Ferm1.contains("cow"); //Проверка существования элемента (true/false)
