@@ -2,20 +2,26 @@ package Exercises_Level6;
 
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
+/*
+ * 
+ * Метод fix должен:
+ * 1. удалять из списка строк все слова, содержащие букву "р"
+ * 2. удваивать все слова содержащие букву "л".
+ * 3. если слово содержит и букву "р" и букву "л", то оставить это слово без изменений.
+ * 4. с другими словами ничего не делать.
+ * 
+ */
 
 public class task3 {
 
-	
 	public static void main(String[] args) throws Exception {
 		
-
         ArrayList<String> strings = new ArrayList<String>();
         strings.add("роза");
         strings.add("лоза");
         strings.add("лира");
-        strings.add("ррр");
+        strings.add("рррр");
         strings.add("ллл");
 
         strings = fix(strings);
@@ -25,64 +31,25 @@ public class task3 {
         }
     }
 
-	
-	
-	
     public static ArrayList<String> fix(ArrayList<String> strings) { 
-    
+    	
         ArrayList<String> stringsR = new ArrayList<String>();
         ArrayList<String> stringsL = new ArrayList<String>();
-        
     	
-    	for(int i = 0; i < strings.size(); i++) {	
-    		
-    		int r = 0;
-    		int l = 0;
-    		
-        	for(int j = 0; j < strings.get(i).length(); j++) {		
-        		
-        		if(strings.get(i).charAt(j) == 'л') {
-        			
-        			l++;
-        		}
-    		
-        		if(strings.get(i).charAt(j) == 'р') {
-        			
-        			r++;
-        		}
-        	}
-        			if(r == 0 && l != 0) {
-        				stringsL.add(strings.get(i));
-        			}
+        for (String string : strings) {
         	
-        			if(r != 0 && l == 0) {
-        				stringsR.add(strings.get(i));
-        			}
-    	}
-    	
- 
+           if(string.indexOf("р") != -1 && string.indexOf("л") == -1) {//если Р есть Л нет
+        	   stringsR.add(string);       	   
+           }
+           
+           if(string.indexOf("л") != -1 && string.indexOf("р") == -1) {//если Л есть Р нет
+        	   stringsL.add(string);  
+           }
+        }
+
     	strings.removeAll(stringsR);
     	strings.addAll(stringsL);
-    	
-        return strings;
         
+        return strings;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
