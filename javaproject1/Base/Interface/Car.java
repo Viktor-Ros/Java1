@@ -1,6 +1,7 @@
 package Interface;
 
-public class Car implements InterfaceColor, InterfacePrice {
+public class Car implements InterfaceTotal {
+	
 	public void color() {
 		System.out.println("Color: Red");
 	}
@@ -9,6 +10,8 @@ public class Car implements InterfaceColor, InterfacePrice {
 	public void price() {
 		System.out.println("Price: 10 000$");
 	}
+
+
 	
 }
 
