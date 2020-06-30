@@ -51,8 +51,6 @@ public class CollectionList {
 		Ferm1.contains("cow"); //Проверка существования элемента (true/false)
 		ArrayList<String> FermList = new ArrayList<String>(Arrays.asList(FermArray));//Преобразование массива в список
 		
-		
-		
 		LinkedList Ferm2 = new LinkedList(); //LinkedList - Список элементов, у которых кроме данных есть ссылки на соседние элементы
 		
 		Ferm2.add("cow");
@@ -60,7 +58,6 @@ public class CollectionList {
 		Ferm2.add("pig");
 		Ferm2.add(2,"cow");//добавление cow на 2 позицию в списке
 		
-		System.out.println(Ferm2);
-			
+		System.out.println(Ferm2);		
 	}
 }
