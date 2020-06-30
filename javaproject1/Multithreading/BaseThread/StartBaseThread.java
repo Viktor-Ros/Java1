@@ -47,6 +47,5 @@ public class StartBaseThread {
 		baseThread2.sleep(2000);
 
 		baseThread2.interrupt();
-		
 	}
 }
