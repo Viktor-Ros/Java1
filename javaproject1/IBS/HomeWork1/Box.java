@@ -10,12 +10,11 @@ public interface Box {
 	
 	public void putSweet(Sweets sweet);
 	
-	public void dellSweet(int index);
+	public void delSweet(int index);
 
 	public double getBoxWeight();
 	
 	public double getBoxPrice();
 	
-	public void getBoxParam();
-
+	public void printBoxParam();	
 }
