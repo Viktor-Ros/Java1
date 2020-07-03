@@ -9,18 +9,24 @@ import java.util.ArrayList;
  */
 
 public class SweetBox implements Box{
-
+	
 	private ArrayList<Sweets> sweetsBoxArrayList = new ArrayList<>();
+	private double weight = 0;
+	private double price = 0;
 	
 	@Override
 	public void putSweet(Sweets sweet) {
 		sweetsBoxArrayList.add(sweet);
+		weight += sweet.getWeight();
+		price += sweet.getPrice();
 	}
 
 	@Override
-	public void dellSweet(int index) {
+	public void delSweet(int index) {
 		
 		if(index < sweetsBoxArrayList.size()) {
+			weight -= sweetsBoxArrayList.get(index).getWeight();
+			price -= sweetsBoxArrayList.get(index).getPrice();
 			sweetsBoxArrayList.remove(index);
 		}
 		else System.out.println("Элемент с таким не существует");
@@ -29,31 +35,21 @@ public class SweetBox implements Box{
 	@Override
 	public double getBoxWeight() {
 		
-		double weight = 0;
-		
-		for(Sweets sweet: sweetsBoxArrayList) {
-			weight += sweet.getWeight();
-		}
 		return weight;
 	}
 
 	@Override
 	public double getBoxPrice() {
-		
-		double price = 0;
-		
-		for(Sweets sweet: sweetsBoxArrayList) {
-			price += sweet.getPrice();
-		}
+
 		return price;
 	}
 
 	@Override
-	public void getBoxParam() {
+	public void printBoxParam() {
 
 		for(Sweets sweet: sweetsBoxArrayList) {
-			System.out.println("Название: " + sweet.getName() + " | Масса: " 
-		+ sweet.getWeight()+ " | Цена: " + sweet.getPrice() +  " | Уникальный параметр: " + sweet.getUniqueParam());
+			System.out.println("Name: " + sweet.getName() + " | Weight: " 
+		+ sweet.getWeight()+ " | Price: " + sweet.getPrice() +  " | Unique parameter - " + sweet.getUniqueParam());
 		}
 	}
 	
@@ -72,7 +68,7 @@ public class SweetBox implements Box{
 			    	  index = i;
 			      	}	
 			}
-			dellSweet(index);
+			delSweet(index);
 		}	
 	}
 	
@@ -87,12 +83,11 @@ public class SweetBox implements Box{
 				
 				Sweets sweet = sweetsBoxArrayList.get(i);
 			      if (sweet.getPrice() < priceMin) {
-			    	  priceMin = sweet.getPrice
-			    			  ();
+			    	  priceMin = sweet.getPrice();
 			    	  index = i;
 			      	}	
 			}
-			dellSweet(index);
+			delSweet(index);
 		}
 	}
 }
