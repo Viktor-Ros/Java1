@@ -14,25 +14,26 @@ public class Main {
 	public static void main(String[] args){
 
 		FileReader reader = null;
-		//System.out.println("Введите адрес файла:");
-		//String address = new Scanner(System.in).nextLine();
+		System.out.println("Введите адрес файла:");
+		String address = new Scanner(System.in).nextLine();
 		
 		try {
-			reader = new FileReader("C:\\Users\\Viktor\\Desktop\\JavaFiles\\JF.txt");//"C:\\Users\\Viktor\\Desktop\\JavaFiles\\JF.txt"
+			reader = new FileReader(address);
 		} catch (FileNotFoundException e) {
 			System.out.println("Такого файла несуществует, попробуйте еще раз:");
 			main(args);
 		}
 		
 		Scanner scan = new Scanner(reader);
-		
-		int count = 0;
+		int countMax = 0;
 		
 		while (scan.hasNextLine()) {
+			
 			String line = scan.nextLine();
 			int lineCount = wordFreq(line);
-			if(count < lineCount) {
-				count = lineCount;
+			
+			if(countMax < lineCount) {
+				countMax = lineCount;
 			}
         }
 		
@@ -44,13 +45,10 @@ public class Main {
 		
 		for(Map.Entry<String, Integer> iter : map.entrySet()) {
 			
-			if(iter.getValue() == count) {
+			if(iter.getValue() == countMax) {
 				System.out.println(iter.getKey() + " = " + iter.getValue());
 			}
 		}	
-		
-		System.out.println(map);
-
 	}
 	
 	static int wordFreq(String line) {
@@ -62,11 +60,12 @@ public class Main {
 			
 			char sym = line.charAt(i);
 			
-			if(Character.isLetter(sym)) {
+			if(Character.isLetter(sym) || Character.isDigit(sym)) {
 				word += String.valueOf(sym);	
 			}
 			
-			if((!Character.isLetter(sym) || i == line.length()-1) && word.length() > 0) {
+			if(((!Character.isLetter(sym) && !Character.isDigit(sym)) || 
+					i == line.length()-1) && word.length() > 0) {
 
 				if(map.containsKey(word)) {
 					int countLet = map.get(word) + 1;
