@@ -14,12 +14,14 @@ public class Main {
 	public static void main(String[] args){
 
 		FileReader reader = null;
-		String address = new Scanner(System.in).nextLine();
+		//System.out.println("Введите адрес файла:");
+		//String address = new Scanner(System.in).nextLine();
 		
 		try {
-			reader = new FileReader(address);
+			reader = new FileReader("C:\\Users\\Viktor\\Desktop\\JavaFiles\\JF.txt");//"C:\\Users\\Viktor\\Desktop\\JavaFiles\\JF.txt"
 		} catch (FileNotFoundException e) {
-			e.printStackTrace();
+			System.out.println("Такого файла несуществует, попробуйте еще раз:");
+			main(args);
 		}
 		
 		Scanner scan = new Scanner(reader);
@@ -28,9 +30,11 @@ public class Main {
 		
 		while (scan.hasNextLine()) {
 			String line = scan.nextLine();
-			count = wordFreq(line);
+			int lineCount = wordFreq(line);
+			if(count < lineCount) {
+				count = lineCount;
+			}
         }
-		
 		
 		try {
 			reader.close();
@@ -44,11 +48,14 @@ public class Main {
 				System.out.println(iter.getKey() + " = " + iter.getValue());
 			}
 		}	
+		
+		System.out.println(map);
+
 	}
 	
 	static int wordFreq(String line) {
 		
-		int count = 0;
+		int count = 1;
 		String word = "";
 		
 		for(int i = 0; i < line.length(); i++) {
