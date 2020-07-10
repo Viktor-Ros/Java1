@@ -3,19 +3,23 @@ package HomeWork2;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.text.Collator;
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.TreeMap;
 
 public class Main {
 
-	static Map<String, Integer> map = new HashMap<>();
+	static Map<String, Integer> map = new TreeMap<>(Collator.getInstance(new Locale("ru")));
 
 	public static void main(String[] args){
 
 		FileReader reader = null;
 		System.out.println("Введите адрес файла:");
-		String address = new Scanner(System.in).nextLine();
+		//String address = new Scanner(System.in).nextLine();
+		String address = "C:\\Users\\Viktor\\Desktop\\JavaFiles\\JF.txt";
 		
 		try {
 			reader = new FileReader(address);
@@ -58,7 +62,7 @@ public class Main {
 		
 		for(int i = 0; i < line.length(); i++) {
 			
-			char sym = line.charAt(i);
+			char sym = Character.toLowerCase(line.charAt(i));
 			
 			if(Character.isLetter(sym) || Character.isDigit(sym)) {
 				word += String.valueOf(sym);	
