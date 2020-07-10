@@ -18,8 +18,7 @@ public class Main {
 
 		FileReader reader = null;
 		System.out.println("Введите адрес файла:");
-		//String address = new Scanner(System.in).nextLine();
-		String address = "C:\\Users\\Viktor\\Desktop\\JavaFiles\\JF.txt";
+		String address = new Scanner(System.in).nextLine();
 		
 		try {
 			reader = new FileReader(address);
@@ -47,6 +46,12 @@ public class Main {
 			e.printStackTrace();
 		}
 		
+		System.out.println("Список слов с их частотами:");
+		for(Map.Entry<String, Integer> iter : map.entrySet()) {
+				System.out.println(iter.getKey() + " = " + iter.getValue());
+		}
+		
+		System.out.println("Слова с максимальной частотой:");
 		for(Map.Entry<String, Integer> iter : map.entrySet()) {
 			
 			if(iter.getValue() == countMax) {
