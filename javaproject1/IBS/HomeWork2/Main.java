@@ -13,16 +13,18 @@ public class Main {
 
 	static Map<String, Integer> map = new TreeMap<>(Collator.getInstance(new Locale("ru")));
 
-	public static void main(String[] args){
+	public static void main(String[] args) throws Exception{
 
 		FileReader reader = null;
 		System.out.println("Введите адрес файла:");
-		String address = new Scanner(System.in).nextLine();
+		//String address = new Scanner(System.in).nextLine();
+		String address = "C:\\Users\\Viktor\\Desktop\\JavaFiles\\JF.txt";
+
 
 		try {
 			reader = new FileReader(address);
 		} catch (FileNotFoundException e) {
-			e.printStackTrace();
+			throw new Exception();
 		}
 		
 		Scanner scan = new Scanner(reader);
