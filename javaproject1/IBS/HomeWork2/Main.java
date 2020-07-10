@@ -4,7 +4,6 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.text.Collator;
-import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Scanner;
@@ -19,12 +18,11 @@ public class Main {
 		FileReader reader = null;
 		System.out.println("Введите адрес файла:");
 		String address = new Scanner(System.in).nextLine();
-		
+
 		try {
 			reader = new FileReader(address);
 		} catch (FileNotFoundException e) {
-			System.out.println("Такого файла несуществует, попробуйте еще раз:");
-			main(args);
+			e.printStackTrace();
 		}
 		
 		Scanner scan = new Scanner(reader);
