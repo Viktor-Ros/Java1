@@ -17,9 +17,7 @@ public class Main {
 
 		FileReader reader = null;
 		System.out.println("Введите адрес файла:");
-		//String address = new Scanner(System.in).nextLine();
-		String address = "C:\\Users\\Viktor\\Desktop\\JavaFiles\\JF.txt";
-
+		String address = new Scanner(System.in).nextLine();
 
 		try {
 			reader = new FileReader(address);
