@@ -1,0 +1,46 @@
+{
+  "organization": [
+	{
+	  "Name": "Name1",
+	  "ShortName": "sN1",
+	  "Adress": "adress1",
+	  "Phone": 1111,
+	  "INN": 11111,
+	  "OGRN": 111111,
+	  "OpenDate": "1999-01-01",
+	  "Securities": [
+	    {
+	      "id": 1,
+	      "endDate": "1999-01-01",
+	      "currency": "USD"
+	    },
+	    {
+	     "id": 2,
+	      "endDate": "2022-01-01",
+	      "currency": "RUR"
+	    }
+	  ]
+	},
+	{
+	  "Name": "Name2",
+	  "ShortName": "sN2",
+	  "Adress": "adress1",
+	  "Phone": 2222,
+	  "INN": 22222,
+	  "OGRN": 222222,
+	  "OpenDate": "2005-01-01",
+	  "Securities": [
+	    {
+	      "id": 3,
+	      "endDate": "2005-01-01",
+	      "currency": "EUR"
+	    },
+	    {
+	     "id": 4,
+	      "endDate": "2021-01-01",
+	      "currency": "USD"
+	    }
+	  ]
+	} 
+  ]
+}
