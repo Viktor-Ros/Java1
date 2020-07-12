@@ -15,7 +15,8 @@ public class Main {
 		ArrayList<Organization> orgList = ParserJSON.parserToAddress(address);
 		
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yy", Locale.ENGLISH);
-
+		System.out.println("Список организаций: ");
+		
 		for(Organization org : orgList){
 			System.out.println("Краткое название: " + org.getShortName() 
 			+ ", Дата основания: " + org.getOpenDate().format(formatter));	
@@ -24,6 +25,8 @@ public class Main {
 		int count = 0;
 		LocalDate nowDate = LocalDate.now();
 		 
+		System.out.println("Список просроченных ценных бумаг: ");
+
 		for(Organization org : orgList){
 
 			ArrayList<Securities> secList = org.getSecuritiesList();	
