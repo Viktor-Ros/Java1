@@ -1,13 +1,13 @@
 {
   "organization": [
 	{
-	  "Name": "Name1",
-	  "ShortName": "sN1",
-	  "Adress": "adress1",
-	  "Phone": 1111,
-	  "INN": 11111,
-	  "OGRN": 111111,
-	  "OpenDate": "1999-01-01",
+	  "Name": "Аэрофлот",
+	  "ShortName": "AFLT",
+	  "Adress": "Россия, г.Москва, ул.Арбат, д.10",
+	  "Phone": 88004445555,
+	  "INN": 7712040126,
+	  "OGRN": 1027700092661,
+	  "OpenDate": "1992-07-27",
 	  "Securities": [
 	    {
 	      "id": 1,
@@ -22,13 +22,13 @@
 	  ]
 	},
 	{
-	  "Name": "Name2",
-	  "ShortName": "sN2",
-	  "Adress": "adress1",
-	  "Phone": 2222,
-	  "INN": 22222,
-	  "OGRN": 222222,
-	  "OpenDate": "2005-01-01",
+	  "Name": "Магнит",
+	  "ShortName": "MGNT",
+	  "Adress": "Россия, г.Краснодар, ул.Солнечная, д.15/5",
+	  "Phone": 88002009002,
+	  "INN": 2309085638,
+	  "OGRN": 1032304945947,
+	  "OpenDate": "1994-03-05",
 	  "Securities": [
 	    {
 	      "id": 3,
